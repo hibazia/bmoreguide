@@ -1,0 +1,44 @@
+/* Base.scss */
+
+body {
+    background-color: $background-color;
+    //box-sizing: border-box;
+    color: $color;
+    @include body-font-light;
+    font-size: $base-font-size;
+    //margin: 0 auto;
+    //max-width: 600px;
+    //padding: 0 10px;
+    //width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+       color: black; 
+    }
+    .cafe h1, .food h1, .attractions h1,
+    .cafe h2, .food h2, .attractions h2 {
+        font-size: em(100px);
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+section h1 {
+    font-size: em(50px);
+}
+
+h1, h2, h3 {
+    @include headline-font;
+    line-height: 1;
+    overflow: hidden;
+}
+
+a {
+    transition: color 300ms linear;
+    &:hover {
+        transition: color 300ms linear;
+    }
+}

@@ -1,0 +1,63 @@
+/* Layout.scss */
+
+nav[role="navigation"] {
+    //max-width: 600px;
+    position: fixed;
+    //text-align: center;
+    top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    width: 100%;
+}
+
+//header[role="banner"] {
+    //margin: 100px 100px 140px 100px;
+
+
+header[role="banner"], main[role="banner"] {
+    width: 100%;
+    top: 0;
+    margin-top: 0px;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 0 auto;
+        max-width: 1024px;
+        width: 100%;
+    }
+    nav[role="navigation"] {
+        position: static;
+        width: 100%;
+        padding: 0px;
+        padding-right: none;
+    }
+    header[role="banner"], main[role="banner"] {
+        width: 100%;
+        padding: 0;
+        
+        }
+    header[role="banner"] {
+        box-sizing: content-box;
+    }
+    main[role="main"] {
+        float: right;
+        width: 60%;
+    }
+    footer[role="contentinfo"] {
+        box-sizing: content-box;
+        float: center;
+        padding: 0px;
+        margin-top: 0px;
+        bottom: 0;
+    }
+}
+
+
+.cafe-location, .food-location, {
+    margin-bottom: em(75px);
+    &:last-of-type {
+        margin-bottom: em(150px)
+    }
+}
